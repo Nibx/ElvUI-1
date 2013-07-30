@@ -134,7 +134,7 @@ local function LoadSkin()
 		end
 	end)
 	
-	for i = 1, 3 do
+	for i = 1, 4 do
 		local bu = GroupFinderFrame["groupButton"..i]
 
 		bu.ring:Hide()
@@ -232,6 +232,16 @@ local function LoadSkin()
 	end
 
 	S:HandleDropDownBox(LFDQueueFrameTypeDropDown)
+
+	--Flex Raid
+	FlexRaidFrameScrollFrame:StripTextures()
+	FlexRaidFrameBottomInset:StripTextures()
+	hooksecurefunc("FlexRaidFrame_Update", function()
+		FlexRaidFrame.ScrollFrame.Background:SetTexture(nil)
+	end)
+	
+	S:HandleDropDownBox(FlexRaidFrameSelectionDropDown)
+	S:HandleButton(FlexRaidFrameStartRaidButton, true)
 
 	-- Raid Finder
 	RaidFinderFrame:StripTextures()

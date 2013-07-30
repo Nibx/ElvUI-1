@@ -206,7 +206,7 @@ function M:UpdateSettings()
 		if AurasMover and not E:HasMoverBeenMoved('AurasMover') and not E:HasMoverBeenMoved('MinimapMover') then
 			AurasMover:ClearAllPoints()
 			AurasMover:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -(E.PixelMode and 4 or 8), 2)
-			E:SaveMoverDefaultPosition('AurasMover')
+			-- E:SaveMoverDefaultPosition('AurasMover')
 		end
 		
 		if AurasMover then

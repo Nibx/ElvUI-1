@@ -345,7 +345,7 @@ function CH:StyleChat(frame)
 			self:SetAlpha(0)
 		end
 
-	end)
+	end)	
 		
 	CreatedFrames = id
 	frame.styled = true
@@ -1727,6 +1727,13 @@ function CH:Initialize()
 	editBox:Height(200)
 	editBox:SetScript("OnEscapePressed", function() CopyChatFrame:Hide() end)
 	scrollArea:SetScrollChild(editBox)
+	CopyChatFrameEditBox:SetScript("OnTextChanged", function(self, userInput)
+		if userInput then return end
+		local _, max = CopyChatScrollFrameScrollBar:GetMinMaxValues()
+		for i=1, max do
+			ScrollFrameTemplate_OnMouseWheel(CopyChatScrollFrame, -1)
+		end
+	end)	
 	
 
 	local close = CreateFrame("Button", "CopyChatFrameCloseButton", frame, "UIPanelCloseButton")
