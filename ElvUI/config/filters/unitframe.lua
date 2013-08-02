@@ -88,6 +88,7 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 			[SpellName(8122)] = Defaults(), --Psychic Scream
 			[SpellName(9484)] = Defaults(), --Shackle Undead
 			[SpellName(15487)] = Defaults(), --Silence
+			[SpellName(114908)] = Defaults(), --Spirit Shell
 			[SpellName(114404)] = Defaults(), --Void Tendrils
 			[SpellName(88625)] = Defaults(), --Holy Word: Chastise
 			[SpellName(113792)] = Defaults(), --Psychic Terror (Psyfiend)
