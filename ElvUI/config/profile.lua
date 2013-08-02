@@ -22,6 +22,12 @@ P['general'] = {
 
 	["fontSize"] = 11,
 	["font"] = "Friz Quadrata TT",
+	
+	["bordercolor"] = { r = .20,g = .20,b = .20 },
+	["backdropcolor"] = { r = .16,g = .16,b = .16 },
+	["backdropfadecolor"] = { r = .10,g = .10,b = .10, a = 0.8 },
+	['bubblefadecolor'] = { r = .10,g = .10,b = .10, a = 0.5 },
+	["valuecolor"] = {r = valueR,g = valueG,b = valueB},
 
 	['mapAlpha'] = 1,
 	['tinyWorldMap'] = true,
@@ -87,19 +93,19 @@ P['bags'] = {
 
 --NamePlate
 P["nameplate"] = {
-	['font'] = 'ElvUI Pixel',
-	['fontSize'] = 7,
-	['fontOutline'] = 'MONOCHROMEOUTLINE',
+	['font'] = 'ElvUI Font',
+	['fontSize'] = 10,
+	['fontOutline'] = 'OUTLINE',
 	["smallPlates"] = true,
 	["comboPoints"] = true,
 	['nonTargetAlpha'] = 0.50,
 	['healthBar'] = {
-		['width'] = 108,
-		['height'] = 9,		
+		['width'] = 114,
+		['height'] = 8,		
 		['lowThreshold'] =  0.40,
 		['text'] = {
 			['enable'] = false,
-			['format'] = 'CURRENT',
+			['format'] = 'CURRENT_PERCENT',
 			['xOffset'] = 0,
 			['yOffset'] = 1,
 			['attachTo'] = 'CENTER',
@@ -107,7 +113,7 @@ P["nameplate"] = {
 		}		
 	},
 	['castBar'] = {
-		['height'] = 6,
+		['height'] = 5,
 		['color'] = { r = 1,g = 208/255,b = 0 },
 		['noInterrupt'] = { r = 0.78, g = 0.25, b = 0.25 },		
 	},
@@ -129,7 +135,7 @@ P["nameplate"] = {
 	['auras'] = {
 		['enable'] = true,
 		['font'] = 'ElvUI Pixel',
-		['fontSize'] = 7,
+		['fontSize'] = 14,
 		['fontOutline'] = 'MONOCHROMEOUTLINE',
 		['numAuras'] = 4,
 		['stretchTexture'] = true,
@@ -188,7 +194,7 @@ P['auras'] = {
 		['sortMethod'] = "TIME",
 		['sortDir'] = '-',
 		['seperateOwn'] = 1,
-		['size'] = 32,
+		['size'] = 26,
 	},
 	['debuffs'] = {
 		['growthDirection'] = 'LEFT_DOWN',
@@ -199,7 +205,7 @@ P['auras'] = {
 		['sortMethod'] = "TIME",
 		['sortDir'] = '-',
 		['seperateOwn'] = 1,
-		['size'] = 32,
+		['size'] = 26,
 	},
 }
 
@@ -226,7 +232,7 @@ P['chat'] = {
 	['panelBackdropNameLeft'] = '',
 	['panelBackdropNameRight'] = '',
 	['panelBackdrop'] = 'SHOWBOTH',
-	['panelTabBackdrop'] = false,
+	['panelTabBackdrop'] = true,
 	['panelTabTransparency'] = false,
 	['editBoxPosition'] = 'BELOW_CHAT',
 
@@ -277,7 +283,7 @@ P['datatexts'] = {
 P['tooltip'] = {
 	['anchor'] = 'SMART',
 	['health'] = true,
-	['healthHeight'] = 8,
+	['healthHeight'] = 5,
 	['ufhide'] = 'NONE',
 	['whostarget'] = true,
 	['combathide'] = false,
@@ -1125,15 +1131,15 @@ P['unitframe'] = {
 				['height'] = 10,
 				['offset'] = 0,
 				['position'] = 'BOTTOMRIGHT',
-				['hideonnpc'] = false,			
-				['yOffset'] = 0,				
-				['xOffset'] = 0,				
+				['hideonnpc'] = false,
+				['yOffset'] = 0,
+				['xOffset'] = 0,
 			},			
 			['name'] = {
 				['position'] = 'LEFT',
 				['text_format'] = '[namecolor][name:medium]',
 				['yOffset'] = 0,				
-				['xOffset'] = 0,				
+				['xOffset'] = 0,
 			},
 			['buffs'] = {
 				['enable'] = true,
