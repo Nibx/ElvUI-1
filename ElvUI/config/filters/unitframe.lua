@@ -172,6 +172,7 @@ G.unitframe.aurafilters['TurtleBuffs'] = {
 			[SpellName(33206)] = Defaults(3), -- Pain Suppression
 			[SpellName(47788)] = Defaults(), -- Guardian Spirit
 			[SpellName(62618)] = Defaults(), -- Power Word: Barrier
+			[SpellName(114908)] = Defaults(), -- Spirit Shell
 			[SpellName(47585)] = Defaults(5), -- Dispersion
 		--Warlock
 			[SpellName(104773)] = Defaults(), -- Unending Resolve
